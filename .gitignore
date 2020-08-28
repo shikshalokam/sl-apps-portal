@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+/src/environments
+
+# dependencies
+/node_modules
