@@ -7,10 +7,9 @@ import { HttpClient } from '@angular/common/http';
 export class AppDetailsService {
   constructor(public http: HttpClient) {}
 
-  getAppDetails() {
+  getAppDetails(appName) {
     return this.http
-      .get(
-        'https://dev.api.shikshalokam.org/kendra/api/v1/apps/details/samiksha'
+      .get('http://dev.api.shikshalokam.org/kendra/api/v1/apps/details/samiksha'
       )
       .subscribe((res) => {
         console.log(res);
