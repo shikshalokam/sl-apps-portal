@@ -4,10 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppLinksComponent } from './components/app-links/app-links.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppLinksComponent
   ],
   imports: [
     BrowserModule,

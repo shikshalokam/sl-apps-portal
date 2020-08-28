@@ -5,10 +5,10 @@
     <div class="rightContainer">
       <div class="links">
         <ul>
-          <li (click)="goTo('aboutSl')"><a>About Us</a></li>
-          <li (click)="goTo('explore')"><a>Explore</a></li>
-          <li (click)="goTo('partners')"><a>Our Partners</a></li>
-          <li (click)="goTo('footer')"><a>Contact Us</a></li>
+          <li><a href ="{{redirectLink}}" target ="_blank">About Us</a></li>
+          <li><a href="{{redirectLink}}" target="_blank">Our Work</a></li>
+          <li><a href="{{redirectLink}}" target="_blank">Our Partners</a></li>
+          <li><a href="{{redirectLink}}" target ="_blank">Contact Us</a></li>
           <!-- <li _ngcontent-c7="">
             <div class="login ">
               <a>
@@ -20,7 +20,7 @@
         </ul>
       </div>
     </div>
-    <!-- <button mat-icon-button (click)="toggleNav()" class="menuIcon">
+    <button mat-icon-button (click)="toggleNav()" class="menuIcon">
       <mat-icon>menu</mat-icon>
-    </button> -->
+    </button>
   </div>

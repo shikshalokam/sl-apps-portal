@@ -1,0 +1,38 @@
+<div *ngIf="load">
+  <div class="m-5 px-5">
+    <h1>Get The
+      <span style="font-weight: 600;">{{appdetails?.displayName}} App</span> </h1>
+
+    <p>
+     {{appdetails?.description}}
+    </p>
+  </div>
+
+  <div class="d-flex flex-wrap-reverse justify-content-center">
+    <div class="align-content-center d-flex justify-content-center flex-wrap">
+      <a href="{{appdetails?.playstoreLink}}" target="_blank"><img
+        src="../../../assets/store-logo/google-play-badge.png"
+        alt=""
+        style="width: 20rem"
+      /></a>
+
+      <a href="{{appdetails?.appStoreLink}}" target="_blank"><img
+        src="../../../assets/store-logo/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+        alt=""
+        style="width: 17rem; padding-top: 16px;"
+      /></a>
+    </div>
+
+    <div style="padding-left: 10%;">
+    <a><img
+        src="{{appdetails?.logo}}"
+        alt=""
+        style="width: 20rem"
+      /></a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!load">
+<h2 style="align-content: center;align-items: center; display: flex;padding-left: 50%;">Loading ....</h2>
+</div>
