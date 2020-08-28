@@ -5,10 +5,7 @@ import { AppLinksComponent } from './components/app-links/app-links.component';
 
 const routes: Routes = [
 {
-  path: '', component: AppLinksComponent, pathMatch: 'full'
-},
-{
-  path: '**', redirectTo: ''
+  path: '**', component: AppLinksComponent
 }
 ];
 
