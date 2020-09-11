@@ -1,0 +1,26 @@
+<div class="headrWrapper">
+    <div class="leftContainer">
+      <img (click)="goTo('aboutSl')" src="../../../../assets/images/ShikshaLokam Logo_highrez_transparent.png">
+    </div>
+    <div class="rightContainer">
+      <div class="links">
+        <ul>
+          <li><a href ="{{redirectLink}}" target ="_blank">About Us</a></li>
+          <li><a href="{{redirectLink}}" target="_blank">Our Work</a></li>
+          <li><a href="{{redirectLink}}" target="_blank">Our Partners</a></li>
+          <li><a href="{{redirectLink}}" target ="_blank">Contact Us</a></li>
+          <!-- <li _ngcontent-c7="">
+            <div class="login ">
+              <a>
+                <button mat-flat-button="" color="primary" class="login mat-flat-button mat-primary">
+                  <span style="color: #fff !important;">Login</span></button>
+              </a>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <button mat-icon-button (click)="toggleNav()" class="menuIcon">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
