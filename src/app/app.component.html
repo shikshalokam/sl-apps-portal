@@ -1,43 +1,25 @@
-
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav mode="over" class="sidemenu">
     <mat-action-list>
-      <button mat-list-item> About Us </button>
-      <button mat-list-item > Explore </button>
-      <button mat-list-item > Our Partners </button>
-      <button mat-list-item > Contact Us </button>
-     
+      <a href ="{{navigateLink}}" target ="_blank"><button mat-list-item>About Us</button></a>
+      <a href="{{navigateLink}}" target="_blank"><button mat-list-item>Our Work</button></a>
+      <a href="{{navigateLink}}" target="_blank"><button mat-list-item>Our Partners</button></a>
+      <a href="{{navigateLink}}" target ="_blank"><button mat-list-item>Contact Us</button></a>
     </mat-action-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
     <mat-toolbar class="toolBar noMarginPadding">
       <div class="col-sm-12 noPadding">
-        <app-header></app-header>
+        <app-header (toggle)="sidenav.toggle()"></app-header>
       </div>
     </mat-toolbar>
     <div class="col-md-12 wrapper">
       <router-outlet></router-outlet>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-       <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-       <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaa</h5>
-      
     </div>
 
     <div #footer class="col-xs-12 _margin-top" style="padding: 0">
       <app-footer></app-footer>
     </div>
-
-    </mat-sidenav-content>
-    </mat-sidenav-container>
-
-
+  </mat-sidenav-content>
+</mat-sidenav-container>
