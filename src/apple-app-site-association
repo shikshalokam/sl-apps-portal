@@ -1,0 +1,27 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "AGV2ZVZLYB.org.shikshalokam.samiksha",
+                "paths": [ "*"]
+            },
+            {
+                "appID": "AGV2ZVZLYB.org.shikshalokam.samiksha.darpan",
+                "paths": [ "*"]
+            },
+            {
+                "appID": "AGV2ZVZLYB.org.shikshalokam.samiksha.palliThalam",
+                "paths": [ "*"]
+            },
+            {
+                "appID": "AGV2ZVZLYB.org.shikshalokam.unnati",
+                "paths": [ "*"]
+            },
+            {
+                "appID": "AGV2ZVZLYB.org.shikshalokam.samiksha.dcpcr",
+                "paths": [ "*"]
+            }
+        ]
+    }
+}
